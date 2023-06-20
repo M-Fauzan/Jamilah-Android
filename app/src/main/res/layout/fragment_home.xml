@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <ImageView
+        android:id="@+id/img_main_banner"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/woman_g4e360bbfd_1920_1"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+    <TextView
+        android:id="@+id/tv_home_question"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jasa salon apa yang akan Anda gunakan hari ini?"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/img_main_banner"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_home_haircut"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="48dp"
+        android:src="@drawable/ic_scissors_white"
+
+        android:contentDescription="@string/potong_rambut"
+        android:backgroundTint="@color/purple"
+        app:tint="@null"
+        app:layout_constraintTop_toBottomOf="@id/tv_home_question"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_home_haircut"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/potong_rambut"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/fab_home_haircut"
+        app:layout_constraintStart_toStartOf="@id/fab_home_haircut"
+        app:layout_constraintEnd_toEndOf="@id/fab_home_haircut"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_home_scrub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:src="@drawable/ic_scrub"
+        android:contentDescription="@string/scrub"
+        android:backgroundTint="@color/purple"
+        app:tint="@null"
+        app:layout_constraintTop_toBottomOf="@id/tv_home_question"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_home_scrub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scrub"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/fab_home_scrub"
+        app:layout_constraintStart_toStartOf="@id/fab_home_scrub"
+        app:layout_constraintEnd_toEndOf="@id/fab_home_scrub"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_home_facial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="48dp"
+        android:contentDescription="@string/facial"
+        android:backgroundTint="@color/purple"
+        app:tint="@null"
+        app:layout_constraintTop_toBottomOf="@id/tv_home_haircut"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_home_facial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/facial"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/fab_home_facial"
+        app:layout_constraintStart_toStartOf="@id/fab_home_facial"
+        app:layout_constraintEnd_toEndOf="@id/fab_home_facial"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_home_makeup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:contentDescription="@string/makeup_ke_pesta"
+        android:backgroundTint="@color/purple"
+        app:tint="@null"
+        app:layout_constraintTop_toBottomOf="@id/tv_home_scrub"
+        app:layout_constraintEnd_toEndOf="parent"
+         />
+
+    <TextView
+        android:id="@+id/tv_home_makeup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/makeup_ke_pesta"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/fab_home_makeup"
+        app:layout_constraintStart_toStartOf="@id/fab_home_makeup"
+        app:layout_constraintEnd_toEndOf="@id/fab_home_makeup"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paket Komplit"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

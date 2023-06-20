@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <ImageView
+        android:id="@+id/img_facial_banner"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/woman_g4e360bbfd_1920_1"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+    <TextView
+        android:id="@+id/tv_facial_product"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Produk"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/img_facial_banner"
+        />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/cg_facial_product"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Material3.Light"
+        app:singleSelection="true"
+        app:layout_constraintTop_toBottomOf="@id/tv_facial_product"
+        >
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_facial_citra"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="Citra"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_facial_wardah"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="Wardah"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+
+            />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_facial_garnier"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="Garnier"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_facial_emina"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="Emina"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+
+            />
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/tv_facial_sheetmask"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Sheetmask"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/cg_facial_product"
+        />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/cg_facial_sheetmask"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Material3.Light"
+        app:singleSelection="true"
+        app:layout_constraintTop_toBottomOf="@id/tv_facial_sheetmask"
+        >
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_facial_sm_citra"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="Citra"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_facial_sm_wardah"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="Wardah"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+
+            />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_facial_sm_garnier"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="Garnier"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_facial_sm_emina"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="Emina"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+
+            />
+    </com.google.android.material.chip.ChipGroup>
+    <Button
+        android:id="@+id/btn_facial_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Pesan"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

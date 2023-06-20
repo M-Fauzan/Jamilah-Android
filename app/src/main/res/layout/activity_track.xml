@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrackActivity"
+    >
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+    <View
+        android:id="@+id/rect_track"
+        android:background="@drawable/rectangle"
+        android:layout_width="328dp"
+        android:layout_height="147dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_track_profile"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        map:layout_constraintTop_toTopOf="@id/rect_track"
+        map:layout_constraintStart_toStartOf="@id/rect_track"
+        tools:src="@drawable/whatsapp_image_2023_06_13_at_10_22_26__cropped_"
+        />
+    <TextView
+        android:id="@+id/tv_track_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        map:layout_constraintTop_toTopOf="@id/img_track_profile"
+        map:layout_constraintStart_toEndOf="@id/img_track_profile"
+        tools:text="Elly Yuliati"
+        />
+    <ImageView
+        android:id="@+id/img_track_star"
+        android:src="@drawable/ic_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        map:layout_constraintTop_toBottomOf="@id/tv_track_name"
+        map:layout_constraintStart_toStartOf="@id/tv_track_name"
+        />
+    <TextView
+        android:id="@+id/tv_track_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        tools:text="4.9"
+        android:textColor="@color/black"
+        map:layout_constraintTop_toTopOf="@id/img_track_star"
+        map:layout_constraintBottom_toBottomOf="@id/img_track_star"
+        map:layout_constraintStart_toEndOf="@id/img_track_star"
+        />
+    <TextView
+        android:id="@+id/tv_track_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        tools:text="Pegawai sedang dalam perjalanan. Mohon ditunggu ya!"
+        android:textColor="@color/black"
+
+        map:layout_constraintBottom_toBottomOf="@id/rect_track"
+        map:layout_constraintStart_toStartOf="@id/rect_track"
+        map:layout_constraintEnd_toEndOf="@id/rect_track"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

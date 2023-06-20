@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Jamilah</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_profile">Profil</string>
+    <string name="title_activity_track">TrackActivity</string>
+    <string name="potong_rambut">Potong rambut</string>
+    <string name="scrub">Scrub</string>
+    <string name="facial">Facial</string>
+    <string name="makeup_ke_pesta">Makeup ke pesta</string>
+</resources>
